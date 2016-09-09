@@ -1,0 +1,461 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	background-image:url(../imagenes/plantillas/fondo.jpg);
+	background-position:top;
+	background-repeat:repeat-x;
+	margin:0 auto;
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+	font-size: 13px;
+	font-weight:400;
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+	color: #222;
+	font-weight:400;
+	margin:0;
+	padding:0;
+	
+}
+
+
+/************************** HEADER **************************/
+#encabezado{
+	width:100%;
+	margin:0 auto;
+}
+#back-negro{
+	background-color:#000;
+	width:100%;
+	margin:0 auto;
+	height:28px;
+}
+#datos-encabezado{
+	border-bottom:1px #ccc solid;
+	background-image:url(../imagenes/plantilla/back-gris.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	width:100%;
+	margin-top:.9em;
+	padding-bottom: .4em;
+	margin:0 auto;
+	position:relative;
+}
+#centro{
+	width:1280px;
+	margin:0 auto;
+	margin-top:0;
+}
+#centro2{
+	width:1280px;
+	margin:0 auto;
+	margin-top:0;
+	position:relative;
+}
+#centro3{
+	width:1280px;
+	margin:0 auto;
+	margin-top:1.8em;
+}
+#logo{
+	display:inline-block;
+	vertical-align:top;
+	width:20%; 
+}
+#telefono{
+	position:absolute;
+	width:60%;
+	margin-top: 1%;
+  	margin-right: 2%;
+	top:0;
+	right:0;
+}
+#telefono h2 {
+	background-image:url(../imagenes/plantilla/icono-telefono.png);
+	background-repeat:no-repeat;
+	background-position:right top;
+	font-size:1.7em;
+	font-weight:700;
+	margin:0;
+	padding-right:1em;
+	text-align:right;
+}
+#telefono p {
+	font-size:1.7em;
+	font-weight:400;
+	margin:0;
+	padding:0;
+	text-align:right;	
+}
+#boton-sesion {
+	display:inline-block;
+	vertical-align:top;
+	width:130px;
+	float:right;
+	margin-top:.1%;
+	margin-right: 2%;
+}
+#boton-sesion a{
+	background-image:url(../imagenes/plantilla/icono-cerrar.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	background-color:#C00;
+	font-weight:400;
+	font-family: 'Open Sans', sans-serif;
+	font-size:13px;
+ 	color: #fff;
+	text-decoration: none;
+	padding:4px 12px 7px 31px;
+	outline:none;
+	vertical-align:middle;
+	text-align:center;
+	bottom:0;
+	width:100%;
+}
+#boton-sesion a:hover{
+	background-color:#a30f18;
+	text-decoration:none;
+	outline:none;
+
+}
+#bton {
+	display:inline-block;
+	vertical-align:middle;
+	text-decoration:none;
+	color:#333;
+}
+#bton a{
+	color:#333;
+	text-decoration:none;
+}
+#bton p a{
+	color:#333;
+	text-decoration:none;
+}
+#bton p a:hover{
+	color:#333;
+	text-decoration:none;
+}
+
+/************************** CONTENIDO **************************/
+
+#contenido{
+	display:inline-block;
+	vertical-align:top;
+	width:70%;
+	margin-left:2.8%;
+}
+#contenido2{
+	margin-left:2.8%;
+}
+/************************** INDEX **************************/
+#bloque{
+	border:1px #eaeaea solid;
+	background-image: url(../imagenes/index/back-iconos.jpg);
+	background-repeat:repeat-y;
+	background-position:center top;
+	display:inline-block;
+	vertical-align:top;
+	width:25%;
+	min-height:268px;
+	text-align:center;
+	margin-left:7.8%;
+	margin-bottom:6%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	position:relative;
+}
+#bloque figure{
+	border-bottom:1px #ccc solid;
+	padding-bottom:.8em;
+	width:75%;
+	margin: 0 auto;
+	margin-top: 8%;
+}
+#bloque h2{
+	font-size:17px;
+	text-decoration:none;
+	font-weight:700;
+	margin-bottom:.8em;
+
+}
+#btn{
+	position:absolute;
+	bottom:0;
+	right:5px;
+	left:5px;
+	margin:0 auto;
+	width:87px;
+}
+
+#titulo-bienvenidos{
+	border-bottom:1px #eee solid;
+	width:91%;
+	margin-bottom:2%;
+	margin-left:8%;
+	text-align:left;
+}
+#logo-cliente{
+	border-left:1px #ccc solid;
+	display:inline-block;
+	vertical-align:middle;
+	padding-left: 1%;
+	margin-left:1%;
+	margin-bottom: 2%;
+}
+/************************** SECCION 1 **************************/
+#titulo{
+	border-bottom:1px #ccc solid;
+	width:100%;
+	padding-bottom:2%;
+	margin-bottom:2%;
+	text-align:left;
+}
+#contenido-admin{
+	width:100%;
+}
+#contenido-admin2{
+	width:100%;
+	text-align:right;
+	margin-top:3%;
+	margin-bottom:3%;
+}
+#contenido-admin3{
+	border-top:1px #ccc solid;
+	width:100%;
+	padding-top:2%;
+}
+#bloque-imagen{
+	display:inline-block;
+	vertical-align:top;
+	width:56%;
+}
+#bloque-acciones{
+	display:inline-block;
+	vertical-align:middle;
+	width:43%;
+	text-align:right;
+	margin-top:5%;
+}
+#img{
+	display:inline-block;
+	vertical-align:top;
+	margin-left:2%;
+}
+#bloque-actualizar{
+	border-bottom:1px #ccc solid;
+	display:inline-block;
+	vertical-align:middle;
+	width:100%;
+	padding-bottom:2%;
+	margin-top:2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************** BOTONES **************************/
+.agregar {
+	border:1px #ccc solid;
+	background-color:#fff;
+	background-image:url(../imagenes/interiores/boton-agregar.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:13px;
+	font-family: 'Open Sans', sans-serif;
+	color:#333;
+	width:121px;
+	text-align:center;
+	padding:9px 0 10px 12px;
+	}
+.cancelar{
+	border:none;
+	background-color:#c7141c;
+	background-image: url(../imagenes/interiores/boton-cancelar.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:13px;
+	font-family: 'Open Sans', sans-serif;
+	color:#fff;
+	width:121px;
+	text-align:center;
+	padding:9px 0 10px 12px;
+	}
+.guardar{
+	border:none;
+	background-color:#961116;
+	background-image: url(../imagenes/interiores/boton-guardar.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:13px;
+	font-family: 'Open Sans', sans-serif;
+	color:#fff;
+	width:121px;
+	text-align:center;
+	padding:9px 0 10px 12px;
+	}	
+.actualizar {
+	border:1px #ccc solid;
+	background-color:#fff;
+	background-image: url(../imagenes/interiores/boton-actualizar.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:13px;
+	font-family: 'Open Sans', sans-serif;
+	color:#333;
+	width:121px;
+	text-align:center;
+	padding:9px 0 10px 12px;
+	}
+.productos {
+	border:1px #ccc solid;
+	background-color:#fff;
+	background-image: url(../imagenes/interiores/boton-actualizar.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:13px;
+	font-family: 'Open Sans', sans-serif;
+	color:#333;
+	width:121px;
+	text-align:center;
+	padding:9px 0 10px 12px;
+	}
+.eliminar {
+	border:1px #ccc solid;
+	background-color:#fff;
+	background-image: url(../imagenes/interiores/boton-eliminar.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:13px;
+	font-family: 'Open Sans', sans-serif;
+	color:#333;
+	width:121px;
+	text-align:center;
+	padding:9px 0 10px 12px;
+	}
+.modificar {
+	border:1px #ccc solid;
+	background-color:#fff;
+	background-image: url(../imagenes/interiores/boton-modificar.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:13px;
+	font-family: 'Open Sans', sans-serif;
+	color:#333;
+	width:121px;
+	text-align:center;
+	padding:9px 0 10px 12px;
+	}	
+.campo {
+	text-align:left;
+	font-family: 'Source Sans Pro', sans-serif;
+	color:#333;
+	background:none;
+	outline:none;
+	margin-top:5px;
+	margin-bottom:5px;
+	width:77%;
+	height:40px;
+	border:1px solid #CCC;
+	background-color:#fff;
+	}
+/************************** TEXTOS **************************/
+.h1{
+	display:inline-block;
+	vertical-align:top;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom:0;
+  text-align: right;
+}
+.h2{
+	display:inline-block;
+	vertical-align:top;
+	font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom:0;
+  text-align: right;
+ 	text-transform:capitalize;
+
+}
+.subtitulos{
+	background-image:url(../imagenes/interiores/triangulo.jpg);
+	background-repeat:no-repeat;
+	background-position:left center;
+	display:inline-block;
+	vertical-align:middle;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-align:left;
+	padding-left:1.8%;
+	width:20%;
+}
+.subtitulos2{
+	border-bottom:1px #ccc solid;
+	background-image:url(../imagenes/interiores/triangulo.jpg);
+	background-repeat:no-repeat;
+	background-position:left top;
+	display:inline-block;
+	vertical-align:middle;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-align:left;
+	padding-left:1.8%;
+	padding-bottom:1%;
+	width:100%;
+}
+.texto{
+	display:inline-block;
+	vertical-align:middle;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-align:left;
+}
+
+
+.atributos {
+	border-top:1px #ccc solid;
+	margin-bottom:50px
+}
+.submenus {
+	padding-left:15px;
+}
+.submenus li {
+	list-style:circle #F00;
+}
+.submenus li a {
+	font-size:14px;
+	color:#000;
+	text-decoration:none;
+}
+.submenus li a:hover {
+	color:#F00;
+}
+#logo-cliente {
+	background-image:url(../../imagenes/manu_fondo.png);
+	background-repeat:repeat;
+}
+
+
+
+
+

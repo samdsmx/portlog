@@ -1,0 +1,241 @@
+@media screen and  (max-width : 1440px) {
+#encabezado{
+	width:100%;
+	margin:0 auto;
+}
+#centro{
+	width:98%;
+}
+#centro2{
+	width:97%;
+}
+#centro3{
+	width:98%;
+}
+#bloque{
+	width:22.6%;
+	margin-left:9.8%;
+}
+#contenido{
+	width:70%;
+	margin-left:.8%;
+}
+#bloque h2{
+	font-size:17px;
+}
+#telefono h2 {
+	background-image:url(../imagenes/plantilla/icono-telefono2.png);
+	background-repeat:no-repeat;
+	background-position:right top;
+	font-size:19px;
+}
+#telefono p {
+	font-size:19px;
+}
+/************************** SECCION 1 **************************/
+#titulo{
+	width:100%;
+	}
+#contenido-admin{
+	width:100%;
+}
+#contenido-admin2{
+	width:100%;
+}
+#contenido-admin3{
+	width:100%;
+}
+#bloque-imagen{
+	width:69%;
+}
+#bloque-acciones{
+	width:30%;
+}
+
+#bloque-actualizar{
+	width:100%;
+}
+
+}
+
+@media screen and  (max-width : 1200px) {
+#contenido{
+	width:70%;
+	margin-left:0;
+}
+#contenido2{
+	margin-left:4.8%;
+}
+#bloque{
+	width:25%;
+	margin-left:7.5%;
+	min-height:249px;
+}
+#bloque h2{
+	font-size:16px;
+}
+#telefono h2 {
+	font-size:19px;
+}
+#telefono p {
+	font-size:19px;
+}
+/************************** SECCION 1 **************************/
+.campo {
+	width:74%;
+	}
+subtitulos {
+  width: 23%;
+
+}
+
+
+@media screen and  (max-width : 1024px) {
+#logo{
+	width:23%;
+}
+#contenido{
+	width:70%;
+	margin-left:0;
+}
+#bloque{
+	width:27%;
+	margin-left:5.6%;
+	min-height:240px;
+}
+#bloque h2{
+	font-size:16px;
+}
+#telefono h2 {
+	font-size:19px;
+}
+#telefono p {
+	font-size:19px;
+}
+#logo-cliente{
+	width:15%;
+}
+.h1{
+  font-size: 24px;
+
+}
+/************************** SECCION 1 **************************/
+#contenido2 {
+  margin-left: 7.8%;
+}
+.campo {
+	width:100%;
+	}
+.subtitulos {
+  width: 100%;
+
+}
+}
+
+
+@media screen and  (max-width : 859px) {
+#bloque{
+	margin-left: 5.4%;
+}
+}
+
+
+
+@media screen and  (max-width : 800px) {
+#contenido{
+	width:93.8%;
+	margin-left:0;
+	margin-top:0;
+}
+#bloque{
+	width:27%;
+	margin-left:5.6%;
+	min-height:240px;
+}
+#bloque figure {
+  width: 80%;
+}
+}
+
+
+@media screen and  (max-width : 736px) {
+#bloque{
+  	width: 37%;
+  	margin-left: 10.4%;
+ 	min-height: 287px;
+}
+#bloque h2{
+	font-size:18px;
+}
+}
+
+@media screen and  (max-width : 674px) {
+#contenido {
+  width: 92.8%;
+}
+#titulo-bienvenidos{
+	display:none;
+}
+}
+
+
+
+@media screen and  (max-width : 614px) {
+#contenido {
+  width: 91%;
+}	
+#bloque{
+ 	min-height: 249px;
+}	
+#logo{
+	width:53%;
+	display:block;
+	margin:0 auto;
+	
+}	
+#telefono{
+	display:none;
+	width:60%;
+}
+}
+
+@media screen and  (max-width : 480px) {
+#contenido{
+	width:95%;
+	margin-top:3%;
+}
+#bloque{
+	display:block;
+	margin:0 auto;
+	width:85%;
+	min-height:364px;
+	margin-bottom:5.9%;
+}
+
+/************************** SECCION 1 **************************/
+#contenido-admin2{
+	text-align:left;
+}
+#bloque-imagen {
+  width: 98%;
+}
+#bloque-acciones {
+  width: 98%;
+  text-align:left;
+}
+}
+
+@media screen and  (max-width : 370px) {
+#bloque{
+	width:85%;
+	min-height:280px;
+}
+
+}
+
+
+
+
+
+
+

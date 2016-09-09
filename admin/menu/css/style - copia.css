@@ -1,0 +1,106 @@
+#nav {
+
+	height:auto !important;
+	width:1000px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 auto; 
+	padding:0;
+	border-bottom: none;
+	z-index:700;
+}
+
+#nav li a, #nav li {
+	
+	float: left;
+	z-index:500;
+}
+
+#nav li {
+	
+	list-style: none;
+	position: relative;
+	z-index:700;
+}
+
+#nav li a {
+
+	float: right;
+	padding: 18px 30px;
+	background: none;
+	font-weight:400;
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px !important;
+	font-weight:400;
+	text-decoration:none !important;
+	color:#fff !important;
+	z-index:500;
+}
+
+#nav li a:hover {
+background-color:#ba0f2b;
+color: #FFF !important;
+text-align:center;
+
+}
+
+
+/* Submenu */
+
+.hasChildren {
+	position: absolute;
+	width: 0px; height: 0px;
+	background: black;
+	right : 0;
+	bottom: 0;
+}
+
+#nav li ul {
+ display: none;
+ position: absolute;
+ left: 0;
+ top: 100%;
+ padding: 0; margin: 0;
+ 
+}
+
+#nav li:hover > ul {
+ display: block;
+}
+
+
+
+#nav li ul li, #nav li ul li a {
+  background-color: #f9f9f9;
+  color:#666 !important;
+  z-index:500;
+  text-align:center;
+}
+#nav li ul li, #nav li ul li a:hover {
+ background-color:#ba0f2b;
+ color: #FFF !important;
+  z-index:500;
+  text-align:center;
+}
+
+#nav li ul li {
+ _display: inline; /* for IE6 */
+}
+
+#nav li ul li a {
+ width:50px;
+ display: block;
+}
+
+/* SUBSUB Menu */
+
+#nav li ul li ul {
+ display: none;
+}
+
+#nav li ul li:hover ul {
+ left: 100%;
+ top: 0;
+}
+
+
+#nav li ul 

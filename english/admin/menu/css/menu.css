@@ -1,0 +1,107 @@
+
+/* MENU */
+
+#nav {
+ bottom:0;
+ margin: 0; padding: 0;
+ z-index:400;
+}
+
+#nav li a, #nav li {
+ float: left;
+}
+
+#nav li {
+ list-style: none;
+ position: relative;
+}
+
+#nav li a {
+	text-transform:uppercase;
+	padding:0px 20px;
+	text-align: center;
+	text-decoration: none;
+	z-index:300;
+
+
+}
+#nav li a:hover {
+	background-color:#094b69;
+	color:#fff;
+}
+
+
+/* Submenu */
+
+.hasChildren {
+	position: absolute;
+	width: 0; height: 0;
+	background:none;
+	right : 0;
+	bottom: 0;
+}
+
+#nav li ul {
+	background-color:#822426;
+ display: none;
+ position: absolute;
+ left: 0;
+ top: 100%;
+ padding: 0; margin: 0;
+ width:1000px;
+}
+
+#nav li:hover > ul {
+ display: block;
+ position:absolute;
+ left:0;
+ z-index:999999999;
+  width:557px;
+  margin-left:-188px;
+}
+
+#nav li ul li, #nav li ul li a {
+	z-index:500;
+ float: none;
+}
+
+#nav li ul li {
+ _display: inline; /* for IE6 */
+ display:inline-block;
+ width:auto;
+}
+
+#nav li ul li a {
+ width: 250px;
+ display: block;
+}
+
+/* SUBSUB Menu */
+
+#nav li ul li ul {
+ display: none;
+}
+
+#nav li ul li:hover ul {
+ left: 100%;
+ top: 0;
+}
+
+.rmm-toggled-title {
+  position: absolute;
+  top: 13px;
+  right: 67px;
+  font-size: 16px;
+  color: white;
+  text-shadow: 1px 1px 1px rgb(130, 36, 38);
+}
+
+
+@media screen and  (max-width : 1024px) { 
+
+#nav li a {
+	  padding: 16.5px 12px;
+}
+
+}
+

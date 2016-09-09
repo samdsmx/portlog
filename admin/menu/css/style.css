@@ -1,0 +1,48 @@
+#nav {
+
+	height:auto !important;
+	width:1000px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 auto; 
+	padding:0;
+	border-bottom: none;
+	z-index:700;
+}
+
+#nav li a, #nav li {
+	
+	float: left;
+	z-index:500;
+}
+
+#nav li {
+	
+	list-style: none;
+	position: relative;
+	z-index:700;
+}
+
+#nav li a {
+	width:142px;
+	text-align:center;
+	float: right;
+	padding: 10px 0;
+	background: #11226A;
+	font-weight:400;
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px !important;
+	font-weight:400;
+	text-decoration:none !important;
+	color:#fff !important;
+	z-index:500;
+}
+#nav li ul li a {
+	width:125%;
+}
+#nav li a:hover {
+background-color:#ba0f2b;
+color: #FFF !important;
+text-align:center;
+
+}
+
