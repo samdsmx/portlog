@@ -9,9 +9,9 @@ require_once('admin/paginacion/paginator.class.php');
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
-<!-- InstanceBeginEditable name="head" -->	
+<!-- InstanceBeginEditable name="head" -->
 
-<?php 
+<?php
 # FileName="Connection_php_mysql.htm"
 # Type="MYSQL"
 # HTTP="true"
@@ -22,7 +22,7 @@ $index='inicio'; ?>
 mysqli_select_db($con_admin, $database_con_admin);
 $qry2 =("SELECT * FROM metas WHERE seccion='$index'");
 $r2=mysqli_query($con_admin, $qry2) or die(header('location:home.php'));
-if ( $r2 !== false && mysqli_num_rows($r2) > 0 ) 
+if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 {
 	$a = mysqli_fetch_assoc($r2);
 	$id_metas = test_input($a['id_metas']);
@@ -35,21 +35,21 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 <meta name="keywords" content="<?php echo $meta_keys; ?>" />
 <meta name="description" content="<?php echo $meta_desc; ?>"/>
 <meta name="site" content="">
-<!-- InstanceBeginEditable name="metas" -->	
+<!-- InstanceBeginEditable name="metas" -->
 <?php
-$seccion = array (	
+$seccion = array (
 				  "bloque1" => "b1",
 				   "bloque2" => "b2",
 				   "bloque3" => "b3",
 				   "bloque4" => "b4",
 				   "bloque5" => "b5"
 				  );
-				   
-foreach($seccion as $seccion => $nombre){		
+
+foreach($seccion as $seccion => $nombre){
 mysqli_select_db($con_admin, $database_con_admin);
 $qry2 =("SELECT * FROM op4 WHERE seccion='$seccion'");
 $r2=mysqli_query($con_admin, $qry2) or die(mysqli_error());
-if ( $r2 !== false && mysqli_num_rows($r2) > 0 ) 
+if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 {
 	$a2 = mysqli_fetch_assoc($r2);
    			${'id_op'.$nombre} = stripslashes($a2['id_op']);
@@ -64,22 +64,22 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 			${'desc_img'.$nombre} = stripslashes($a2['desc_imagen']);
 }
 }
-?>		
+?>
 
 <!-- InstanceEndEditable -->
 <?php
-$plantilla = array (	
+$plantilla = array (
 				  "sem1" => "z0",
 				  "logotipo" => "l1",
 				  "leyenda" => "a1",
 				   "aviso" => "a2",
 				   "empresa" => "a3");
-				   
-foreach($plantilla as $plantilla => $nombre){		
+
+foreach($plantilla as $plantilla => $nombre){
 mysqli_select_db($con_admin, $database_con_admin);
 $qry2 =("SELECT * FROM op4 WHERE seccion='$plantilla'");
 $r2=mysqli_query($con_admin, $qry2) or die(mysqli_error());
-if ( $r2 !== false && mysqli_num_rows($r2) > 0 ) 
+if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 {
 	$a2 = mysqli_fetch_assoc($r2);
 			${'tit'.$nombre} = stripslashes($a2['titulo']);
@@ -90,8 +90,8 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 			${'desc_img'.$nombre} = stripslashes($a2['desc_imagen']);
 }
 }
-?>	
-<?php echo $descz0; ?>	
+?>
+<?php echo $descz0; ?>
 
 <!--[if lt IE 9]>
     <script>
@@ -104,12 +104,12 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
     </script>
     <![endif]-->
 
-<link type="image/x-icon" href="img/favicon/favicon.ico" rel="icon" /> 
+<link type="image/x-icon" href="img/favicon/favicon.ico" rel="icon" />
 
 <link href="css/estilos.css" rel="stylesheet" type="text/css" />
 <link href="css/estilos_responsive.css" rel="stylesheet" type="text/css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script type="text/javascript" src="css/menu.js"></script> 
+<script type="text/javascript" src="css/menu.js"></script>
 
 
 <title><?php echo $meta_tit; ?></title>
@@ -124,7 +124,7 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 
 <script>
 	$(document).ready(function(){
-		
+
 		$('.single-item').slick({
 		  infinite: true,
 	autoplay: true,
@@ -133,7 +133,7 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
   arrows:true,
 		  fade:true
 		});
-		
+
 		$('.responsive').slick({
 	autoplay: true,
 	autoplaySpeed: 5000,
@@ -169,8 +169,8 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
     // instead of a settings object
   ]
 });
-		
-});		
+
+});
 </script>
 <!-- InstanceEndEditable -->
 
@@ -182,14 +182,14 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
     <article class="head">
     <div class="aliniado_right">
     	<div class="wrapper">
-        	<a href="http://www.portloginter.com">Español</a> | <a href="http://en.portloginter.com/">English</a>
+        	<a href="http://www.portloginter.com">Español</a> | <a href="http://portloginter.com/english/">English</a>
         </div>
     </div>
-    
+
 	<div class="wrapper">
 
     <div id="logotipo"><figure><a href="index.php"><img src="img/logo/portlog-logotipo.png" alt="<?php echo $desc_imgl1; ?>" title="<?php echo $tit_imgl1; ?>" /></a></figure></div>
-                    
+
                 <div class="navegacion">
                     <div class="menu_bar">
                     <a class="bt-menu">Menú <span class="icon-menu"></span> </a>
@@ -205,7 +205,7 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
                         </ul>
                     </nav>
                 </div>
-    </div>  
+    </div>
     </article>
 </header>
 
@@ -215,22 +215,22 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 <!-- InstanceBeginEditable name="Contenido" -->
 <div id="banner">
     <div class="slider single-item">
-<?php              
+<?php
 mysqli_select_db($con_admin, $database_con_admin);
 $qry2 = "SELECT * FROM banner ORDER BY orden ASC";
 $r2 = mysqli_query($con_admin, $qry2) or die(header('location:home.php'));
-if ( $r2 !== false && mysqli_num_rows($r2) > 0 ) 
+if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 {
 	while ($a2 = mysqli_fetch_assoc($r2))
 	{
 		$img_banner = test_input($a2['imagen']);
 		$titulo = test_input($a2['titulo']);
 		$descripcion = test_input($a2['descripcion']);
-?>     
+?>
         	<figure class="img_banner"><img src="img/banner/<?php echo $img_banner; ?>" ><div class="tit_banner"><h3><?php echo $titulo; ?></h3><p><?php echo $descripcion; ?></p></div></figure>
    <?php }
 }
-?>         
+?>
 		</div>
     </div>
 </div>
@@ -243,39 +243,39 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
         <h4><?php echo $titb1; ?></h4>
         <p><?php echo $subb1; ?></p>
     </div>
-    
+
     <div class="bloq1">
     	<figure><img src="img/op/<?php echo $imgb2; ?>" title="<?php echo $tit_imgb2; ?>" alt="<?php echo $desc_imgb2; ?>"></figure>
         <h4><?php echo $titb2; ?></h4>
         <p><?php echo $subb2; ?></p>
     </div>
-    
+
     <div class="bloq1">
     	<figure><img src="img/op/<?php echo $imgb3; ?>" title="<?php echo $tit_imgb3; ?>" alt="<?php echo $desc_imgb3; ?>"></figure>
         <h4><?php echo $titb3; ?></h4>
         <p><?php echo $subb3; ?></p>
     </div>
-    
+
 </div>
 </div>
 
 <div id="bloque2">
-<div class="wrapper">	
-    
+<div class="wrapper">
+
     <div class="bloq2_1">
     	<figure class="col-xl-4"><img src="img/op/<?php echo $imgb4; ?>" title="<?php echo $titb4; ?>" alt="<?php echo $desc_imgb4; ?>" ></figure>
-        
+
         <article class="col-xl-8 col-mc-12">
         	<h5><?php echo $titb4; ?></h5>
             <h3><?php echo $subb4; ?></h3>
-            <div class="texto_general"> 
+            <div class="texto_general">
                 <?php echo $descb4; ?>
             </div>
         </article>
     </div>
-    
+
     <figure class="separador"><img src="imagenes/index/separador.png" title="Separador" alt="separa los bloques"></figure>
-    
+
     <div class="bloq2_2">
     	<article class="col-xl-4 col-mc-6 col-ch-12">
     		<h3><?php echo $titb5; ?></h3>
@@ -283,7 +283,7 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
                 <?php echo $descb5; ?>
             </div>
     	</article>
-        
+
         <figure class="col-xl-8 col-mc-6 col-ch-12"><img src="img/op/<?php echo $imgb5; ?>" title="<?php echo $tit_imgb5; ?>" alt="<?php echo $desc_imgb5; ?>" ></figure>
     </div>
 </div>
@@ -295,18 +295,18 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 <footer>
 	<article class="foot">
     <div class="wrapper">
-    	
+
         <div class="pie1">
         	<p><?php echo $desca1; ?></p>
     		<a href="interiores/aviso.php"><?php echo $tita1; ?></a>
         </div>
-        
+
         <div class="pie2">
         	<p><?php echo $tita1; ?></p>
             <a href="http://www.wwpc.eu.com/" target="_blank"><figure><img src="img/op/<?php echo $imga3; ?>" title="<?php echo $tit_imga3; ?>" alt="<?php echo $desc_imga3; ?>" ></figure></a>
         </div>
-        
-    </div>      
+
+    </div>
     </article>
 
 </footer>

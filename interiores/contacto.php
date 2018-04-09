@@ -187,7 +187,7 @@ function validacion_registro()
     <article class="head">
     <div class="aliniado_right">
     	<div class="wrapper">
-        	<a href="http://www.portloginter.com">Español</a> | <a href="http://en.portloginter.com/">English</a>
+        	<a href="http://www.portloginter.com">Español</a> | <a href="http://portloginter.com/english/">English</a>
         </div>
     </div>
     
