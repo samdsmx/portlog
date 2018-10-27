@@ -129,7 +129,7 @@ function validacion_registro()
 	telefono = document.getElementById("telefono").value;
 	email = document.getElementById("email").value;
 	comentarios = document.getElementById("mensaje").value;
-	captcha = document.getElementById("recaptcha_response_field").value;
+	captcha = 'true';//document.getElementById("recaptcha_response_field").value;
 		
 	if(nombre == null || nombre.length == 0 || /^\s+$/.test(nombre) )
 	{
@@ -171,11 +171,7 @@ function validacion_registro()
 
 </script>
 
-<script type="text/javascript">
- var RecaptchaOptions = {
-    theme : 'white'
- };
- </script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <!-- InstanceEndEditable -->
 
 
@@ -251,8 +247,8 @@ function validacion_registro()
 //se incluye el archivo del captcha
 require_once('captcha/recaptchalib.php');
 
-$publickey = "6Lc_ePMSAAAAAPbOZyi5pomwlsmQ8bUh3O6DthNm"; 
-$privatekey = "6Lc_ePMSAAAAAPfj8VmR8C4OHgYRCiT8XkjpsMcw"; 
+$publickey =  "6LdVLncUAAAAAL5QtjtgkQMiNkYk87aV_cM16fxM"; 
+$privatekey =  "6LdVLncUAAAAAHOojbmg84-i-QRZqWPJG50k_TxA"; 
 $resp = null;
 $error = null;
 
