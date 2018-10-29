@@ -9,9 +9,9 @@ require_once('../admin/paginacion/paginator.class.php');
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
-<!-- InstanceBeginEditable name="head" -->	
+<!-- InstanceBeginEditable name="head" -->
 
-<?php 
+<?php
 # FileName="Connection_php_mysql.htm"
 # Type="MYSQL"
 # HTTP="true"
@@ -22,7 +22,7 @@ $index='nosotros'; ?>
 mysqli_select_db($con_admin, $database_con_admin);
 $qry2 =("SELECT * FROM metas WHERE seccion='$index'");
 $r2=mysqli_query($con_admin, $qry2) or die(header('location:home.php'));
-if ( $r2 !== false && mysqli_num_rows($r2) > 0 ) 
+if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 {
 	$a = mysqli_fetch_assoc($r2);
 	$id_metas = test_input($a['id_metas']);
@@ -35,23 +35,23 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 <meta name="keywords" content="<?php echo $meta_keys; ?>" />
 <meta name="description" content="<?php echo $meta_desc; ?>"/>
 <meta name="site" content="">
-<!-- InstanceBeginEditable name="metas" -->	
+<!-- InstanceBeginEditable name="metas" -->
 <?php
-$seccion = array (	
+$seccion = array (
 				  "nosotros" => "b1",
 				   "mision" => "b2",
-				   "vision" => "b3",
-				   
+				   "visión" => "b3",
+
 				   "imagen' and id_op='9" => "i1",
 				   "imagen' and id_op='10" => "i2",
 				   "imagen' and id_op='11" => "i3"
 				  );
-				   
-foreach($seccion as $seccion => $nombre){		
+
+foreach($seccion as $seccion => $nombre){
 mysqli_select_db($con_admin, $database_con_admin);
 $qry2 =("SELECT * FROM op4 WHERE seccion='$seccion'");
 $r2=mysqli_query($con_admin, $qry2) or die(mysqli_error());
-if ( $r2 !== false && mysqli_num_rows($r2) > 0 ) 
+if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 {
 	$a2 = mysqli_fetch_assoc($r2);
    			${'id_op'.$nombre} = stripslashes($a2['id_op']);
@@ -69,18 +69,18 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 ?>
 <!-- InstanceEndEditable -->
 <?php
-$plantilla = array (	
+$plantilla = array (
 				  "sem1" => "z0",
 				  "logotipo" => "l1",
 				  "leyenda" => "a1",
 				   "aviso" => "a2",
 				   "empresa" => "a3");
-				   
-foreach($plantilla as $plantilla => $nombre){		
+
+foreach($plantilla as $plantilla => $nombre){
 mysqli_select_db($con_admin, $database_con_admin);
 $qry2 =("SELECT * FROM op4 WHERE seccion='$plantilla'");
 $r2=mysqli_query($con_admin, $qry2) or die(mysqli_error());
-if ( $r2 !== false && mysqli_num_rows($r2) > 0 ) 
+if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 {
 	$a2 = mysqli_fetch_assoc($r2);
 			${'tit'.$nombre} = stripslashes($a2['titulo']);
@@ -91,8 +91,8 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 			${'desc_img'.$nombre} = stripslashes($a2['desc_imagen']);
 }
 }
-?>	
-<?php echo $descz0; ?>	
+?>
+<?php echo $descz0; ?>
 
 <!--[if lt IE 9]>
     <script>
@@ -105,12 +105,12 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
     </script>
     <![endif]-->
 
-<link type="image/x-icon" href="../img/favicon/favicon.ico" rel="icon" /> 
+<link type="image/x-icon" href="../img/favicon/favicon.ico" rel="icon" />
 
 <link href="../css/estilos.css" rel="stylesheet" type="text/css" />
 <link href="../css/estilos_responsive.css" rel="stylesheet" type="text/css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script type="text/javascript" src="../css/menu.js"></script> 
+<script type="text/javascript" src="../css/menu.js"></script>
 
 
 <title><?php echo $meta_tit; ?></title>
@@ -126,14 +126,14 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
     <article class="head">
     <div class="aliniado_right">
     	<div class="wrapper">
-        	<a href="http://www.portloginter.com">Español</a> | <a href="http://en.portloginter.com/">English</a>
+        	<a href="http://www.portloginter.com">Español</a> | <a href="http://portloginter.com/english/">English</a>
         </div>
     </div>
-    
+
 	<div class="wrapper">
 
     <div id="logotipo"><figure><a href="../index.php"><img src="../img/logo/portlog-logotipo.png" alt="<?php echo $desc_imgl1; ?>" title="<?php echo $tit_imgl1; ?>" /></a></figure></div>
-                    
+
                 <div class="navegacion">
                     <div class="menu_bar">
                     <a class="bt-menu">Menú <span class="icon-menu"></span> </a>
@@ -149,7 +149,7 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
                         </ul>
                     </nav>
                 </div>
-    </div>  
+    </div>
     </article>
 </header>
 
@@ -158,28 +158,28 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 <content>
 <!-- InstanceBeginEditable name="Contenido" -->
 <div id="nosotros" class="wrapper">
-	
+
     <div class="nos_izq">
     	<h3 class="titulos"><?php echo $titb1; ?></h3>
         <h4><?php echo $subb1; ?></h4>
         <?php echo $descb1; ?>
     </div>
-    
+
     <div class="nos_der">
     	<div class="img_izq">
         	<figure><img src="../img/op/<?php echo $imgi1; ?>" title="<?php echo $titi1; ?>" alt="<?php echo $desc_imgi1; ?>" ></figure>
             <figure><img src="../img/op/<?php echo $imgi2; ?>" title="<?php echo $titi2; ?>" alt="<?php echo $desc_imgi2; ?>" ></figure>
         </div>
-        
+
         <div class="img_der"><figure><img src="../img/op/<?php echo $imgi3; ?>" title="<?php echo $titi3; ?>" alt="<?php echo $desc_imgi3; ?>" ></figure></div>
-        
+
     </div>
-    
+
 </div>
 
 <div id="nosotros2">
 <div class="wrapper">
-	
+
     <div class="nos2_1">
     	<figure class="img_nos2"><img src="../img/op/<?php echo $imgb2; ?>" title="<?php echo $tit_imgb2; ?>" alt="<?php echo $desc_imgb2; ?>" ></figure>
         <article class="text_nos2">
@@ -187,9 +187,9 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
            <div class="texto_general"> <?php echo $descb2; ?></div>
         </article>
     </div>
-    
+
     <div class="separador_nos"><img src="../imagenes/index/separador.png" title="Separador" alt="separa los bloques" ></div>
-    
+
     <div class="nos2_2">
     	<figure class="img_nos2"><img src="../img/op/<?php echo $imgb3; ?>" title="<?php echo $tit_imgb3; ?>" alt="<?php echo $desc_imgb3; ?>" ></figure>
         <article class="text_nos2">
@@ -197,7 +197,7 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
             <div class="texto_general"> <?php echo $descb3; ?></div>
         </article>
     </div>
-    
+
 </div>
 </div>
 <!-- InstanceEndEditable -->
@@ -207,18 +207,18 @@ if ( $r2 !== false && mysqli_num_rows($r2) > 0 )
 <footer>
 	<article class="foot">
     <div class="wrapper">
-    	
+
         <div class="pie1">
         	<p><?php echo $desca1; ?></p>
     		<a href="aviso.php"><?php echo $tita1; ?></a>
         </div>
-        
+
         <div class="pie2">
         	<p><?php echo $tita1; ?></p>
             <a href="http://www.wwpc.eu.com/" target="_blank"><figure><img src="../img/op/<?php echo $imga3; ?>" title="<?php echo $tit_imga3; ?>" alt="<?php echo $desc_imga3; ?>" ></figure></a>
         </div>
-        
-    </div>      
+
+    </div>
     </article>
 
 </footer>
