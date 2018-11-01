@@ -8,9 +8,9 @@ extract($_REQUEST);
 //	$a = mysql_fetch_assoc($r2);
 //	$mailito= stripslashes($a['url']);
 //}
-$para      = 'jreyes@centralinteractiva.com.mx'; 
+$para      = 'mbuetler@portloginter.com'; 
 $titulo    = 'Portlog';
-$cabeceras = 'From:Contacto Portlog | Contacto <paginade@server.carambola-hosting.com>' . "\r\n" .
+$cabeceras = 'From:Contacto Portlog' . "\r\n" .
     'Reply-To: paginade@server.carambola-hosting.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
