@@ -236,9 +236,9 @@ $mensaje = filter_var($mensaje, FILTER_SANITIZE_STRING);
 
 //todos los demas campos de texto deberan contar con FILTER_SANITIZE_STRING
 
-$para      = "jreyes@centralinteractiva.com.mx";
+$para      = "mbuetler@portloginter.com";
 $titulo    = 'Portlog';
-$cabeceras = 'From: Portlog | Contacto <inmuebles@telesites.com.mx>' . "\r\n" .
+$cabeceras = 'From: Portlog' . "\r\n" .
              'Cc: "'.$email.'"' . "\r\n" .
     		 'X-Mailer: PHP/' . phpversion();
 
