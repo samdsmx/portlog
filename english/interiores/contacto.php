@@ -231,7 +231,7 @@ function validacion_registro()
     <div class="cont_der">
     	<h2>(*) Required fields</h2>
         
-        <form  name="form1" method="post" onsubmit="return validacion_registro();" >
+        <form action="send.php"  name="form1" method="post" onsubmit="return validacion_registro();" >
         	<div class="btn_cont"><input name="nombre" placeholder="*Name:" type="text" class="fomrulario3" id="nombre"></div>
             
         	<div class="btn_cont2"><input name="apellidos" placeholder="*last name:" type="text" class="fomrulario3" id="apellidos"></div>

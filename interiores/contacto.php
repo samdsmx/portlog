@@ -130,8 +130,8 @@ function validacion_registro()
 	telefono = document.getElementById("telefono").value;
 	email = document.getElementById("email").value;
 	comentarios = document.getElementById("mensaje").value;
-	captcha = 'true';//document.getElementById("recaptcha_response_field").value;
-		
+	var response = grecaptcha.getResponse();
+	
 	if(nombre == null || nombre.length == 0 || /^\s+$/.test(nombre) )
 	{
 		alert("Debe Ingresar su Nombre");
@@ -162,11 +162,10 @@ function validacion_registro()
 		alert("Debe Ingresar sus Comentarios");
 		return false;
 	}
-	if(captcha == null || captcha.length == 0)
-	{
-		alert("Debe Ingresar datos del Captcha correctamente");
+	if(response.length == 0) {
+		alert("Debe validar el captcha");
 		return false;
-		return true;}
+	}
 
 }
 
@@ -233,7 +232,7 @@ function validacion_registro()
     <div class="cont_der">
     	<h2>(*) Campos obligatorios</h2>
         
-        <form  name="form1" method="post" onsubmit="return validacion_registro();" >
+        <form  name="form1" action="send.php" method="post" onsubmit="return validacion_registro();" >
         	<div class="btn_cont"><input name="nombre" placeholder="*Nombre:" type="text" class="fomrulario3" id="nombre"></div>
             
         	<div class="btn_cont2"><input name="apellidos" placeholder="*Apellido:" type="text" class="fomrulario3" id="apellidos"></div>

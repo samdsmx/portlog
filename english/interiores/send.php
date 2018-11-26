@@ -11,7 +11,6 @@ extract($_REQUEST);
 $para      = 'mbuetler@portloginter.com'; 
 $titulo    = 'Portlog';
 $cabeceras = 'From:Contacto Portlog' . "\r\n" .
-    'Reply-To: paginade@server.carambola-hosting.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 //////////////////////////////////////////////////////////////////////////////
